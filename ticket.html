@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tituloDoc">ServiVENT-Documento</title>
+    <link rel="stylesheet" href="css/estilos_ticket.css">
+</head>
+
+<body class="body">
+
+    <div class="content">        
+
+        <div class="principal">
+
+            <div class="botones">
+                <div class="botonDoc">
+                    
+                </div>
+            </div>
+
+            <div class="card">
+
+                <div class="card__perfil" id="ticket">
+
+                    <div class="card__nombre">
+                        <!--https://drive.google.com/uc?export=download&id=1qqu8zDpTILtZFYBVfcHQFPLbJmyPSiJz-->
+                        <img alt="" src="" id="logo">
+                        <h1 class="empresa" id="empresa">EMPRESA</h1>
+                        <a id="direccion">Direccion</a>
+                        <h2 class="numeroRegistro" id="numeroRegistro">Numero Registro</h2>
+                        <a class="fecha" id="fecha">Fecha</a>
+                    </div>
+                    <div class="cliente">
+                        <b>Cliente:</b> <label class="cliente" id="nombreCliente">Nombre del Cliente</label>
+                        
+                    </div>
+                    <hr>
+                    <div class="card__descripcion">
+
+                        <table class="tabla" id="tablaProductos">
+                            <tr class="cabecera">
+                                <th >Can.</th>
+                                <th >Producto</th>
+                                <th >Precio</th>
+                            </tr>
+                        </table>
+                        
+                        <div class="total">
+                            <b>Sub Total: </b> 
+                            <label class="precio" id="subTotal">0</label>
+                        </div>
+                        <div class="total">
+                            <b>Descuento: </b>
+                            <label class="precio" id="otroDescuento">5</label>
+                        </div>
+                        <div class="total">
+                            <b>Impuesto: </b> 
+                            <label class="precio" id="impuesto">0</label>
+                        </div>
+                        <div class="total">
+                            <b>Des. IN: </b> 
+                            <label class="precio" id="descuento">0</label>
+                        </div>
+                        <div class="total">
+                            <b>Total: </b> 
+                            <label class="precio" id="totalPrecio">0</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card__button">
+                        
+                        
+                        <p>GRACIAS POR SU PREFERENCIA</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/imprimir.js"></script>
+    <script src="js/recibe_datos_Ticket.js"></script>
+
+</body>
+
+</html>

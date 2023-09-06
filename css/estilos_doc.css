@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 11px;
+    color: rgb(68, 68, 68);
+    /*border: solid 1px rgb(80, 255, 103);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: monospace;
+    font-family: 'Ubuntu', sans-serif;
+    */
+        
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+body{
+    padding: 0px;
+}
+.titulo{
+    text-align: center;
+    font-size: 3em;
+}
+
+.titulo span{
+    color: rgb(10, 137, 223);
+    font-size: 20px;
+}
+
+.doc{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.btnImprimir{
+    background-color: rgb(4, 88, 184);
+    border: 0px;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    color: rgb(245, 245, 245);
+}
+
+.btnImprimir:hover,
+.btnImprimir:focus {
+    background: rgb(3, 121, 255);
+    color: rgb(255, 255, 255);
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.card{  
+    width: 900px;
+    height: auto;
+    /*overflow: scroll;*/
+    box-shadow: 0px 0px 0px rgb(99, 98, 98);
+    border: solid  rgba(3, 133, 255, 0) 2px;
+    background-color: white;
+    
+}
+
+.card:hover{
+    border-bottom: solid rgb(238, 238, 238) 2px;
+    /*border: solid rgb(3, 133, 255) 2px;*/
+    background-color: white;    
+}
+
+.card_superior{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 10px;
+}
+
+.logo{
+    width: 50%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    border-radius: 0%;   
+}
+
+.datos_empresa{
+    padding-top: 20px;
+    padding-right: 30px;
+    width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.datos_empresa h2{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.info_registro{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.content_info_registro{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 252, 255);
+}
+
+.cliente{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;   
+}
+
+.registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+    width: 50%;
+    text-align: right;
+}
+
+.registro h2{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* INICIO TABLA PRODUCTOS*/
+.info_tabla{
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;  
+}
+
+.tabla_producto{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* CAMBIAR COLOR DE TABLA*********************************/
+.tabla_producto th{    
+    /*background-color: #f04c1a;*/
+    color: rgb(255, 255, 255);  
+    padding: 2px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tdCan{    
+    text-align: center;
+    padding: 5px;
+}
+.tdCodigoP{
+    padding: 3px;
+}
+.tdProducto{
+    text-align: left;
+    padding: 3px;
+}
+.tdSerial{
+    text-align: left;
+    padding: 3px;
+    font-size: 11px;
+}
+.tdPrecioU{
+    text-align: left;
+    padding: 3px;
+}
+.tdTotal{
+    text-align: left;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.tabla_producto tr:nth-child(odd){
+    background-color: rgb(247, 247, 247);
+}
+
+
+/* FIN TABLA PRODUCTOS*/
+
+.info_detalles{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.observaciones{
+    width: 80%;
+    text-align: center;
+}
+
+/* INICIO TABLA PRECIOS*/
+.precios{    
+    width: 35%;
+    border: 1px solid ;
+}
+
+.colum_subtotal{
+    padding-top: 5px;
+    display: flex;    
+    justify-content: right;  
+    font-weight: bold; 
+    
+}
+.colum_subtotal b{
+    width: 40%;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.colum_subtotal span{
+    width: 60%;
+    text-align: right;
+    padding-right: 14px;
+    
+}
+
+.colum_impuesto{
+    display: flex;    
+    justify-content: right;   
+    padding-top: 5px;
+    
+}
+.colum_impuesto b{
+    color: rgb(5, 135, 250);
+    width: 40%;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.colum_impuesto span{
+    color: rgb(5, 135, 250);
+    width: 60%;
+    text-align: right;
+    padding-right: 14px;
+}
+
+.colum_descuento{
+    display: flex;    
+    justify-content: right;  
+    padding-top: 5px;   
+    padding-bottom: 5px;
+}
+.colum_descuento b{
+    color: rgb(253, 77, 24);
+    width: 40%;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.colum_descuento span{
+    color: rgb(253, 77, 24);
+    width: 60%;
+    text-align: right;
+    padding-right: 14px;
+}
+
+/* CAMBIAR COLOR DE TABLA TOTAL*************************/
+.colum_total{
+    display: flex;    
+    justify-content: right; 
+    padding-bottom: 2px; 
+    
+    /*border: 1px solid #f04c1a;*/
+    /*background-color: #f04c1a;*/
+}
+.colum_total b{
+    text-align: right;
+    width: 40%px;
+    color: rgb(255, 255, 255); 
+    font-size: 18px; 
+    padding-top: 5px; 
+    
+}
+.colum_total span{
+    width: 60%;
+    text-align: right;
+    padding-right: 14px;
+    
+    
+    
+}
+/* FIN TABLA PRECIOS*/
+
+.info_pagos{
+   display: flex; 
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 5px;
+   justify-content: right;
+}
+
+.pagos{
+    display: flex;
+    width: 31.5%;
+    justify-content: flex-end;
+}
+
+/* INICIO TABLA PAGOS*/
+.tabla_pagos{
+    border-collapse: collapse;    
+}
+
+.tabla_pagos td{    
+    font-size: 10px;
+    
+    padding: 5px;
+}
+
+.tabla_pagos tr:hover{
+    background-color: rgb(210, 237, 255);
+}
+
+.pagado{
+    font-weight: bold;
+}
+/* FIN TABLA PAGOS*/
+
+.estado{
+    width: 30%;
+}
+
+.faltante{
+    padding-top: 5px;
+    text-align: right;
+    padding-right: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.estadoRegistro{    
+    text-align: right;
+    padding-right: 25px;
+    padding-top: 5px; 
+}
+
+#estadoRegistro{
+    font-size: 16px;   
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* INICIO FIRMAS*/
+.info_firmas{
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+}
+
+.firma_cliente{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.firma_propietario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* FIN FIRMAS*/
+
+.info_tengaEnCuenta{
+    padding: 20px;
+    
+}
+
+/* BOTON IMPRIMIR*/
+.botonDoc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonDoc figure{
+   position:relative;
+    height: 100px;
+    cursor: pointer;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+.botonDoc figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+.botonDoc figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 33, 61, 0.712);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+   text-align: center;
+}
+.botonDoc figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.botonDoc figure:hover > .capa h3{
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+.botonDoc figure:hover > img{
+    transform: scale(1.3);
+}
+.botonDoc figure .capa h3{
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+     margin-top: 30px;
+     font-size: 15px;
+}
+.botonDoc figure .capa p{
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.botonDoc button{
+    border: 0px;
+}

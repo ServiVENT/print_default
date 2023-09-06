@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tituloDoc">ServiVENT-Documento</title>
+    <link rel="stylesheet" href="css/estilos_doc.css">
+    
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    
+</head>
+
+<body class="body">
+
+    <div class="content">
+
+        
+
+        <div class="doc">
+
+            
+            
+            <div class="card" id="card">
+                
+                <div class="contenedor_card" id="contenedor_card">
+
+                    <div class="card_superior">
+
+                    <div class="logo">
+                        <!--https://drive.google.com/uc?export=download&id=1qqu8zDpTILtZFYBVfcHQFPLbJmyPSiJz-->
+                        <img alt="" src="" id="logo">
+                    </div>
+
+                    <div class="datos_empresa">
+                        <h2 id="empresa">EMPRESA</h2>
+                        <P id="sucursal">sucursal</P>
+                        <div><b>Telefono: </b><label id="telefono">591-1111111</label></div>
+                        <div><b>NIT: </b><label id="nit">7878787878</label></div>
+                        <P id="direccion">direccion</P>
+                    </div>
+
+                </div>
+
+                <div class="card_inferior">
+
+                    <div class="info_registro">
+
+                        <div id="content_info_registro" class="content_info_registro">
+
+                            <div class="cliente">
+                                <div><b>Codigo: </b><label id="codigoCliente">C-0001</label></div>
+                                <div><b>Nombre: </b><label id="nombreCliente">Ronny Chavez Cuellar</label></div>
+                                <div><b>Telefono: </b><label id="telefonoCliente">591-77809269</label></div>
+                            </div>
+
+                            <div class="registro">
+                                <h2 id="numeroRegistro">ORDEN - 0001</h2>
+                                <P id="fechaRegistro">3/27/2023 11:28:04 AM</P>
+                                <div><b>Usuario: </b><label id="usuario">Ronny Chavez Cuellar</label></div>
+                                <div><b>Telefono: </b><label id="telefonoUsuario">591-77809269</label></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="info_tabla">
+                        <table class="tabla_producto" id="tabla_producto">
+                            <tr>
+                                <th style="width: 2%;">Can.</th>                                
+                                <th style="width: 13%;">Codigo</th>
+                                <th style="width: 40%;">Producto</th>
+                                <th style="width: 25%;">Serial N°</th>
+                                <th style="width: 10%;">Precio U.</th>
+                                <th style="width: 10%;">Total</th>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <div class="info_detalles">
+
+                        <div class="observaciones">
+                            <div><label id="puntosCliente">PUNTOS: 50</label></div>
+                            <div><label id="puntosTotalCliente">PUNTOS TOTAL: 50</label></div>
+                        </div>
+
+                        <div id="precios" class="precios">
+
+                            <div class="colum_subtotal">
+                                <b>Sub Total: </b><span id="subTotal">400</span>
+                            </div>
+                            <div class="colum_descuento">
+                                <b>Descuento: </b><span id="otroDescuento">5</span>
+                            </div>
+                            
+                            <div id="colum_total" class="colum_total">
+                                <b id="tTotal">TOTAL: </b><span class="colum_total" ><b id="total">445</b> </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info_pagos">
+
+                        <div class="pagos">
+
+                            <table class="tabla_pagos" id="tabla_pagos">
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info_firmas">
+
+                        <div class="firma_cliente">
+                            <b>------------------------------------------------</b>
+                            <label id="firmaNombreCliente"></label>
+                        </div>
+
+                        <div class="firma_propietario">
+                            <b>------------------------------------------------</b>
+                            <label id="firmaNombrePropietario"></label>
+                        </div>
+
+                        <div class="estado">
+                            <div class="faltante">Faltante: <span id="faltante">5</span></div>
+                            <div class="estadoRegistro"><span id="estadoRegistro">Pagado</span></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info_tengaEnCuenta">
+                        <hr>
+                        <p id="tengaEnCuenta"></p>
+                    </div>
+
+                </div>
+                    
+              </div>
+                
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <script src="js/imprimir.js"></script>
+    <script src="js/recibe_datos_doc_1.js"></script>
+    <script src="js/estado.js"></script>
+    
+
+</body>
+
+</html>
